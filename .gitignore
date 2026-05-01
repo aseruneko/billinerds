@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist*.zip
+dist (*).zip
+src/assets/
+.env
+.env.local
+npm-debug.log*

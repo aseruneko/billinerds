@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "NotoColorEmoji";
+  src: url("./assets/NotoColorEmoji-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  color: #f7f1d7;
+  background: #101016;
+  font-family:
+    "Noto Sans JP", "Hiragino Sans", "Yu Gothic", Meiryo, "Segoe UI", Arial,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  min-width: 1024px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  overflow: auto;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(255, 211, 76, 0.18), transparent 28rem),
+    linear-gradient(135deg, #181323 0%, #101016 46%, #201614 100%);
+}
+
+.game-host {
+  width: 1024px;
+  height: 768px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.game-host canvas {
+  display: block;
+  width: 1024px;
+  height: 768px;
+}

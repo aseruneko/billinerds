@@ -1,0 +1,47 @@
+code,text
+status.giant_chalk,大きさ増加
+status.heavy_cue,重さ増加
+status.phase_cue,すりぬけ
+status.draw_go,ドローゴー
+status.slow,スロー
+status.tilt,ティルト！
+status.gather,集合！
+status.pick_blast_point,クリックで地点を選択
+status.pick_repulse_point,クリックで地点を選択
+status.pick_attract_point,クリックで地点を選択
+status.pick_cue_position,クリックで地点を選択
+status.pick_growth_ball,クリックでボールを選択
+status.pick_shrink_ball,クリックでボールを選択
+status.pick_inside_table,テーブル内を選択
+status.blocked,無効な地点
+status.no_ball,ボールなし
+status.mirror_shift,ブリンク
+status.too_many_shots_waived,打ちすぎ
+status.seal_break,残り封印 {remaining}
+status.cue_heal,{amount} 回復
+hazard.poison.title,毒の沼地
+hazard.poison.line.damage,球の移動停止後、それぞれに {damage} ダメージ。
+hazard.poison.line.slow,摩擦力が強い。毒耐性を持つ敵には無効。
+hazard.poison.description,「気づいたら毒沼を作っている、止められない」
+hazard.fog.title,墓場
+hazard.fog.line.heal,球の移動停止後、敵球が{amount}回復。
+hazard.fog.line.cue,摩擦力低下は存在しない。
+hazard.fog.description,手球、HP満タン、撃破済みの球には影響しない。
+hazard.mirror.title,鏡
+hazard.mirror.line.warp,エリア内で手球が停止した場合、
+hazard.mirror.line.trigger,エリア内の垂直線対照地点に移動。
+hazard.mirror.description,敵球は影響されない。
+hazard.roulette.title,ルーレット
+hazard.roulette.line.segment,セグメント: {segment}
+hazard.magic_circle.title,封印の魔法陣
+hazard.magic_circle.line.seal1,封印1つ破壊: ゴーストを2体召喚。
+hazard.magic_circle.line.seal2,封印2つ破壊: ドッペルゲンガーを2体召喚。
+hazard.magic_circle.line.seal3,封印3つ破壊: キャンドルを2体召喚。
+hazard.magic_circle.description,ソウルシールの破壊数に応じて一度だけ増援を呼び出す。
+splash.reason.poison,毒
+splash.reason.fog,墓場の霧
+splash.reason.bomb,爆発
+splash.reason.break,破壊
+splash.reason.shot,射撃
+splash.reason.blast,爆発
+splash.reason.too_many_shots,打ちすぎ
