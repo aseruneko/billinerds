@@ -1,39 +1,40 @@
 # Billinerds
 
-Billinerds is a billiards-inspired stage clear game built around turn-based shots,
-enemy balls, hazards, shop items, and strange table gimmicks.
+ビリヤード風のステージ攻略ゲームです。
 
-Play page:
+プレイはこちら:
 https://aseruneko.itch.io/billinerds
 
-## Game Overview
+## ゲーム概要
 
-The player controls the cue ball and clears stages by reducing enemy balls' HP to
-zero. Shots are charged with the mouse, then released toward the aim direction.
-After the player's shot ends, enemy balls may take special actions.
+プレイヤーは手球を操作し、敵球のHPを0にしてステージクリアを目指します。
+マウスで狙いを定め、長押しでショットの威力を溜め、離すと手球を打ちます。
 
-The game includes:
+プレイヤーのショット後には敵ターンが発生し、敵球が特殊行動を行うことがあります。
+ショップでアイテムを購入しながら、ステージごとのギミックを攻略していきます。
 
-- Stage-based progression
-- Enemy balls with HP, attack, defense, weight, and special actions
-- Hazards such as poison, fog, mirrors, roulettes, and magic circles
-- Shop items that modify cue ball stats, add active abilities, or change stage
-  strategy
-- Encyclopedia, rule, settings, credit, dialogue, shop, game over, and game
-  clear scenes
+主な要素:
 
-## Technical Notes
+- ステージ制の進行
+- HP、攻撃力、防御率、重さを持つ敵球
+- 敵球ごとの特殊行動
+- 毒沼、霧、鏡、ルーレット、魔法陣などのハザード
+- 手球や盤面に影響を与えるショップアイテム
+- 図鑑、ルール、設定、クレジット、会話、ショップ、ゲームオーバー、ゲームクリア画面
 
-This project is a Vite + Preact + TypeScript app, but most gameplay and UI are
-implemented in Phaser.
+## 技術構成
 
-- Vite handles development/build tooling.
-- Preact only mounts the Phaser canvas.
-- Phaser manages scenes, rendering, input, sound, UI objects, and Matter physics.
-- Game data is mostly CSV-driven for balls, actions, items, rules, and UI text.
-- The game uses fixed 4:3 resolution at `1024 x 768`.
+このプロジェクトは Vite + Preact + TypeScript で構成されています。
+ただし、ゲーム本体とUIのほとんどは Phaser 上で実装されています。
 
-Useful commands:
+- Vite: 開発サーバーとビルド
+- Preact: Phaser canvas のマウント
+- TypeScript: 型付き実装
+- Phaser: Scene、描画、入力、サウンド、UI、Matter Physics
+- CSV: ボール、特殊行動、アイテム、ルール、UI文言などのデータ管理
+- 固定解像度: `1024 x 768`
+
+よく使うコマンド:
 
 ```sh
 npm install
@@ -42,18 +43,20 @@ npm run typecheck
 npm run build
 ```
 
-## Missing Files Notice
+## 注意: このリポジトリだけではそのまま動きません
 
-This repository intentionally excludes generated files and large/local assets:
+このリポジトリでは、生成物や一部の大きなローカルアセットをGit管理から除外しています。
+
+除外対象:
 
 - `node_modules/`
 - `dist/`
 - `dist*.zip`
 - `src/assets/`
 
-Because `src/assets/` is ignored, a fresh clone of this repository will not run
-or build as-is unless the required image, audio, and font assets are restored in
-that directory.
+特に `src/assets/` が含まれていないため、clone直後の状態では画像、音声、フォントなどの必要な素材が不足しています。
+そのため、このリポジトリだけではそのまま起動・ビルドできません。
 
-The playable build is available on itch.io:
+実際に遊ぶ場合は itch.io の公開ページを利用してください。
+
 https://aseruneko.itch.io/billinerds
